@@ -42,11 +42,4 @@ class ResultViewController: UIViewController {
         resultAnimalLabel.text = "Вы - \(greatestChoose?.key.rawValue ?? " ")"
         resultDescriptionLabel.text = greatestChoose?.key.definition
     }
-    
-    
-    // 1. Передать сюда массив с ответами - done
-    // 2. Определить наиболее часто встречающийся тип животного - done
-    // 3. Отобразить результаты в соотвствии с этим животным - done
-    // 4. Избавиться от кнопки возврата назад на экране результатов - done
-    
 }
