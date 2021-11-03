@@ -64,6 +64,10 @@ class QuestionsViewController: UIViewController {
         answerChosen.append(currentAnswers[index])
         nextQuestion()
     }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let resultVC = segue.destination as? ResultViewController else { return }
+        resultVC.chosenAnimal = answerChosen
+    }
 }
 
 // MARK: Private Methods
